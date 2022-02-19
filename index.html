@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Advice generator app</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="main">
+            <h1 class="visually-hidden">Advice generator app</h1>
+            <div class="advice">
+                <h2 class="advice__id js-advice-id">Advice #117</h2>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+                <p class="advice__content js-advice-content">
+                    "It's easy to sit up and take notice, what's difficult is
+                    getting up and taking action."
+                </p>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+                <div class="advice__divider">
+                    <picture>
+                        <source
+                            srcset="./images/pattern-divider-desktop.svg"
+                            media="(min-width: 500px)"
+                        />
+                        <img src="./images/pattern-divider-mobile.svg" alt="" />
+                    </picture>
+                </div>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+                <button class="advice__dice js-dice-btn">
+                    <img src="./images/icon-dice.svg" alt="dice" />
+                </button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
