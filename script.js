@@ -19,9 +19,9 @@ async function getAdvice() {
     }
 }
 
-function displayAdvice(data) {
-    adviceId.textContent = `Advice #${data.id}`;
-    adviceContent.textContent = `${data.advice}`;
+function displayAdvice({ id, advice }) {
+    adviceId.textContent = `Advice #${id}`;
+    adviceContent.textContent = `${advice}`;
 }
 
 // handle click on dice btn to get random advice
